@@ -1,0 +1,387 @@
+   /* Navbar */
+   .navbar {
+
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 999;
+     background: linear-gradient(45deg, #00704A, #006640);
+   }
+
+   .logo {
+     height: 30px;
+     margin-right: 20px;
+   }
+
+   .navbar-brand {
+     font-size: 24px;
+     font-weight: bold;
+     margin-left: 20px;
+   }
+
+   .navbar ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+   }
+
+   .navbar li {
+     margin-right: 20px;
+   }
+
+   .navbar a {
+     text-decoration: none;
+     font-weight: bold;
+   }
+
+   .navbar a:hover {
+     color: #ffffff;
+     ;
+   }
+
+   .btn {
+     background-color: #006241;
+     border-color: #ffffff;
+     color: #ffffff;
+     font-weight: 400;
+   }
+
+   .btn:hover {
+     background-color: #00C0F0;
+   }
+
+
+
+
+
+   /* header  Section starts here  */
+
+   .jumbotron {
+
+     background-size: cover;
+     background-position: center;
+     color: #fff;
+     padding: 100px;
+     text-align: center;
+   }
+
+
+   .jumbotron h1 {
+     font-size: 48px;
+     margin-bottom: 20px;
+   }
+
+   .jumbotron p {
+     font-size: 24px;
+   }
+
+   .jumbotron .btn-primary {
+     font-size: 20px;
+     padding: 10px 20px;
+     margin-top: 20px;
+     border-radius: 0;
+   } 
+
+   @media screen and (max-width: 768px) {
+
+     .jumbotron {
+       padding: 80px 20px;
+     }
+
+     .jumbotron h1 {
+       font-size: 36px;
+       margin-top: 35px;
+     }
+
+     .jumbotron p {
+       font-size: 16px;
+     }
+
+     .jumbotron .btn {
+       padding: 10px 20px;
+       font-size: 14px;
+     }
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1496px) {
+     .jumbotron h1 {
+       padding-top: 4rem;
+     }
+   }
+
+
+
+   /* header  Section starts here  */
+
+
+
+
+
+   /* Menu Section */
+
+
+   .container h2 {
+     font-size: 36px;
+     margin-bottom: 40px;
+     text-align: center;
+   }
+
+   .container img {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+   }
+
+   .container h3 {
+     font-size: 24px;
+     margin-bottom: 10px;
+   }
+
+   .container p {
+     font-size: 18px;
+     line-height: 1.5;
+   }
+
+   .menu-section {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     transition: box-shadow 0.5s ease-in-out;
+   }
+
+   .menu-section:hover {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+   }
+
+
+
+
+
+   /*  review section */
+
+   .reviews-section {
+     padding: 80px 0;
+     background: linear-gradient(135deg, #006633, #004d38);
+     text-align: center;
+   }
+
+   .review {
+     margin-bottom: 30px;
+     background-color: #ffffff;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s;
+   }
+
+   .review:hover {
+     transform: scale(1.05);
+   }
+
+
+   .reviews-section h2 {
+     font-size: 32px;
+     margin-bottom: 40px;
+     color: #ffffff;
+   }
+
+
+   .review p {
+     font-size: 18px;
+     line-height: 1.5;
+     color: #555555;
+     margin-bottom: 10px;
+   }
+
+   .review-author {
+     font-style: italic;
+     color: #999999;
+   }
+
+   /* review section ends here*/
+
+
+
+
+   /* Location Section Styles */
+
+   #location {
+     padding: 40px 0;
+   }
+
+   #location h2 {
+     font-size: 36px;
+     margin-bottom: 30px;
+   }
+
+   .location-card {
+     background-color: #f8f8f8;
+     padding: 20px;
+     text-align: center;
+     border-radius: 10px;
+     margin-bottom: 30px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     border: 1px solid #ddd;
+   }
+
+   .location-card:hover,
+   .location-card:focus {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     border-color: #333;
+   }
+
+   .location-card img {
+     width: 100%;
+     max-height: 200px;
+     object-fit: cover;
+     border-radius: 5px;
+     margin-bottom: 15px;
+   }
+
+   .location-card h3 {
+     font-size: 24px;
+     margin-bottom: 10px;
+   }
+
+   .location-card p {
+     font-size: 16px;
+     margin-bottom: 5px;
+   }
+
+   /* Contact Section */
+   .container form {
+     max-width: 500px;
+     margin: 0 auto;
+   }
+
+   .container form .form-group {
+     margin-bottom: 20px;
+   }
+
+   .container form label {
+     font-size: 20px;
+   }
+
+   .container form input,
+   .container form textarea {
+     width: 100%;
+     padding: 10px;
+     font-size: 16px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+   }
+
+   .container form button {
+     font-size: 20px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     background-color: #006241;
+     border-color: #ffffff;
+   }
+
+   .container form button:hover {
+     background-color: #006241;
+     border-color: #ffffff;
+     color: #ffffff;
+     font-weight: 400;
+   }
+
+
+   /*  media queries */
+   @media (max-width: 576px) {
+
+     /* Styles for small screens (e.g., mobile phones) */
+
+     .navbar-brand {
+       font-size: 20px;
+     }
+
+     /* Hero Section adjustments */
+     .jumbotron {
+       padding: 20px;
+     }
+
+     .col-md-4 {
+       margin-bottom: 20px;
+     }
+   }
+
+   @media (min-width: 576px) and (max-width: 992px) {
+     /* Styles for medium screens (e.g., tablets) */
+
+     .navbar-brand {
+       font-size: 24px;
+     }
+
+     .jumbotron {
+       padding: 40px;
+     }
+
+
+     .col-md-4 {
+       margin-bottom: 30px;
+     }
+
+   }
+
+   @media (min-width: 992px) {
+
+     /* Styles for large screens (e.g., desktops) */
+     /* Navbar adjustments */
+     .navbar-brand {
+       font-size: 28px;
+     }
+
+     /* Hero Section adjustments */
+     .jumbotron {
+       padding: 60px;
+     }
+
+     /* Menu Section adjustments */
+     .col-md-4 {
+       margin-bottom: 40px;
+     }
+
+
+   }
+
+   @media (min-width: 992px) and (max-width: 1199px) {
+     #sizesetter {
+       padding-bottom: 28px;
+     }
+   }
+
+   @media (min-width: 768px) and (max-width: 993px) {
+     #sizesetter {
+       padding-bottom: 70px;
+     }
+   }
+
+
+
+   @media (min-width: 992px) and (max-width: 993px) {
+    #sizesetter {
+      padding-bottom: 30px;
+    }
+  }
+
+   /* Footer Styles */
+
+   .footer {
+     background-color: #f8f8f8;
+     padding: 20px 0;
+     text-align: center;
+     font-size: 14px;
+     margin-top: 20px;
+     color: white;
+
+   }
+
+   .footer p {
+     margin: 0;
+   }
+
+   
+
+   /*footer ends here */

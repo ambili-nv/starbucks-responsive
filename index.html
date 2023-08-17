@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="webpimages/SBLOGO-removebg-preview.webp">
+
+
+</head>
+
+<body>
+  <!-- Navigation bar starts here  -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand"
+      href="https://en.wikipedia.org/wiki/Starbucks#:~:text=Starbucks%20was%20founded%20in%201971%20by%20Jerry%20Baldwin%2C,into%20a%20coffee%20shop%20serving%20espresso%20-based%20drinks."
+      target="_blank">Starbucks</a>
+    <img class="logo" src="webpimages/images-removebg-preview.webp" alt="Starbucks Logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item ">
+          <a class="nav-link" href="#Hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#location">Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navigation bar ends here  -->
+
+
+  <!-- header Section starts here  -->
+
+  <header class="jumbotron text-center " id="Hero" style="background-image: url('images/banner.jpg');">
+    <h1>Welcome to Starbucks</h1>
+    <p>Enjoy our delicious coffee and beverages</p>
+    <a href="https://www.starbucks.in/ordering" target="_blank"><button class="btn">Order Now</button></a>
+  </header>
+
+  <!-- header Section ends here  -->
+
+
+  <!-- Menu Section starts here  -->
+
+  <section class="container" id="menu">
+    <div>
+      <h2 class="text-center">Our Popular Menu</h2>
+      <div class="row">
+
+
+        <div class="col-md-4 sm-6 menu-section">
+          <img src="webpimages/coffee.webp" alt="Coffee" class="img-fluid">
+          <h3>Coffee</h3>
+          <p>Discover our wide selection of coffee drinks.</p>
+        </div>
+
+        <div class="col-md-4 sm-6 menu-section">
+          <img src="webpimages/tea.webp" alt="Tea" class="img-fluid">
+          <h3>Tea</h3>
+          <p>Try our refreshing tea options.</p>
+        </div>
+
+
+        <div class="col-md-4 sm-6 menu-section">
+          <img src="webpimages/cake2.webp" alt="Pastries" class="img-fluid">
+          <h3>Pastries</h3>
+          <p>Indulge in our freshly baked pastries.</p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- Menu Section ends here  -->
+
+
+
+  <!--reviews section starts here -->
+
+
+  <section class="reviews-section">
+    <div class="container">
+      <h2>Famous Reviews</h2>
+      <div class="review">
+        <p>"Best coffee I've ever had! The flavors are amazing and the staff is always friendly."</p>
+        <p class="review-author">- John Doe</p>
+      </div>
+      <div class="review">
+        <p>"Starbucks never disappoints! Their coffee is consistently excellent, and the atmosphere is cozy."</p>
+        <p class="review-author">- Jane Smith</p>
+      </div>
+      <div class="review">
+        <p>"I can't start my day without Starbucks! The quality and taste of their coffee are unmatched."</p>
+        <p class="review-author">- Alex Johnson</p>
+      </div>
+    </div>
+  </section>
+
+    <!--reviews section starts here -->
+
+
+  <!-- Locations Section -->
+
+  <section id="location" class="container">
+    <h2 class="text-center">Our Banglore Stores</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="location-card" id="sizesetter">
+          <img src="webpimages/whitefieldnew.webp" alt="Location 1" onclick="redirectToLocationwhitefield()">
+          <h3>Banglore City</h3>
+          <p>Koramangala 80 Feet Rd<br>Koramangala, 7th Block</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="location-card">
+          <img src="webpimages/koramangalabucks.webp" alt="Location 2" onclick="redirectToLocationkoramangala()">
+          <h3>White field</h3>
+          <p> Ground Prestige RR Building 55 <br>Bengaluru, Karnataka 560001</p>
+          <p>Phone: (987) 654-3210</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="location-card">
+          <img src="webpimages/churchstreet.webp" alt="Location 3" onclick="redirectToLocationHSR()">
+          <h3>HSR </h3>
+          <p>Ground Prestige RR Building 55<br>Bengaluru, Karnataka 560001</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Locations Section -->
+
+
+
+
+  <!-- Contact Section -->
+
+  <section class="container" id="Contact" style="background-image:url('images/coffee.jpg'); color: white;">
+
+    <h2 class="text-center">Contact Us</h2>
+    
+    <form id="submit-form" >
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control" style="background-color: #fff; border-color: #ccc;">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" style="background-color: #fff; border-color: #ccc;">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" class="form-control" style="background-color: #fff; border-color: #ccc;"></textarea>
+      </div>
+      <button type="submit" class="btn mb-2">Submit</button>
+    </form>
+  </section>
+
+    <!-- Contact Section ends here  -->
+
+    
+
+    <!-- footer  Section -->
+
+    <footer class="footer bg-dark">
+    <div class="container text-center">
+      <p>&copy; 2023 Starbucks. All rights reserved.</p>
+    </div>
+  </footer>
+
+      <!-- footer  Section ends here -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</body>
+
+</html>
